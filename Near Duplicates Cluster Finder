@@ -1,0 +1,9 @@
+**Near Duplicates Cluster Finder**
+
+The Near Duplicates Cluster Finder software is a Java program, which finds clusters of near duplicate documents. It runs on Java platform 1.7 and can be used on Windows, Mac, UNIX, Linux, etc. It is an addition to the Near Duplicates Finder, which searches for near duplicate documents based on internal text of the document. The Near Duplicates Finder works with different types of documents, including Plain Text, HTML, XML, PDF, Microsoft Office, OpenOffice, RTF, etc. Click here for more information about the Near Duplicates Finder. 
+
+Each cluster starts with the pivot document, following by the list of exact duplicates or near duplicate documents sorted by similarity score. 
+
+You also can see the near duplicate documents presented as a chain, which is built by the Near Dupilcates Chain Finder. Click here for more information about the Near Duplicates Chain Finder. The chain is an ordered collection of documents, with a root document, sorted by document differences. The last document in a chain can be quite different from the first one, however the software allows you to see the chain of changes in one set. 
+
+Depending on configuration of the Near Duplicates Cluster Finder the task to pre-process all documents from Enron e-mails collection can take from 1 to 3 hours (running on a laptop with a single thread). Further it can take another up to 3 hours to build clusters for all Enron documents. However when the clusters are identified, different reports can be created within a couple of minutes, for example, make a report for all documents similar to the selected one, or make a report sorting documents in the cluster by size, last modified date, or a file name. You also can quickly remove or add documents to an existing collection. 
