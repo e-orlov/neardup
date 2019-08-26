@@ -13,7 +13,7 @@ The Near Duplicates Finder software is a Java program, which finds duplicates an
 You can see that the content of the documents is different, however most of the text is matching in both documents. 
 Besides Near Duplicates Finder you can run the Cluster Finder, which will report the clusters of discovered near-duplicate documents. Click here for more information about the Cluster Finder. You also can see the near duplicate documents presented as a chain, which is built by the Near Dupilcates Chain Finder. Click here for more information about the Near Duplicates Chain Finder. The chain is an ordered collection of documents, with a root document, sorted by document differences. The last document in a chain can be quite different from the first one, however the software allows you to see the chain of changes in one set. 
 
-The Near Duplicates Finder works with different types of documents, including Plain Text, HTML, XML, PDF, Microsoft Office, OpenOffice, RTF, etc. It extracts text from documents and creates a fingerprint (or signature) for each document, which allows quickly find duplicates or near-duplicates for this document. The program uses a database index to store the document fingerprints and detecting near-duplicates in large collections should be very fast*. The near-duplicate search algorithm is an implementation of the "Method and apparatus for identifying near-duplicate documents" patent 8370390. For commercial usage of this software or the patent please contact us using email: info@softcorporation.com. 
+The Near Duplicates Finder works with different types of documents, including Plain Text, HTML, XML, PDF, Microsoft Office, OpenOffice, RTF, etc. It extracts text from documents and creates a fingerprint (or signature) for each document, which allows quickly find duplicates or near-duplicates for this document. The program uses a database index to store the document fingerprints and detecting near-duplicates in large collections should be very fast*. The near-duplicate search algorithm is an implementation of the "Method and apparatus for identifying near-duplicate documents" patent 8370390. 
 
 The Near Duplicates Finder runs on Java platform 1.5 (or up) and can be used on Windows, Mac, UNIX, Linux, etc. The Java ver 1.7 is recommended because of compatibility with third party libraries. The software works under 32 bit OS, however, depending on your documents, it might require up to 1-2 Gb of virtual memory, so we recommend it running under 64 bit OS with 4 GB of virtual memory. 
 
@@ -26,20 +26,20 @@ Invalid input parameters: Invalid number of arguments
 Near Duplicates Finder v.1.0.2
 Usage: java com.softcorporation.neardup.DuplicatesFinder parameters ...
 
-Parameters format: -parameter [value]
-    -start filename[,filename]  directory / file(s) to search for duplicates (mandatory)
-    -report filename            report file (by default report goes to ./report.log file)
-    -format log|prog            report formatting (log by default)
-    -score value                the score to report a duplicate
-    -addonly                    add documents to the database without looking for duplicates
-    -update                     process only updated documents
-    -unpack                     unpack documents from zip and gzip archives
-    -purge                      clear files list from past runs
-    -db path                    location of database directory
-    -delete criteria            remove duplicates by criteria (old, new, small, large)
-    -deletepath pattern         remove only matching pattern files (mandatory for delete)
-    -verbose                    display progress information
-    -help                       display this message and terminate the program
+        Parameters format: -parameter [value]
+            -start filename[,filename]  directory / file(s) to search for duplicates (mandatory)
+            -report filename            report file (by default report goes to ./report.log file)
+            -format log|prog            report formatting (log by default)
+            -score value                the score to report a duplicate
+            -addonly                    add documents to the database without looking for duplicates
+            -update                     process only updated documents
+            -unpack                     unpack documents from zip and gzip archives
+            -purge                      clear files list from past runs
+            -db path                    location of database directory
+            -delete criteria            remove duplicates by criteria (old, new, small, large)
+            -deletepath pattern         remove only matching pattern files (mandatory for delete)
+            -verbose                    display progress information
+            -help                       display this message and terminate the program
 
 Example: Find duplicates from text files in directory 'docs' and save report in 'duplicates.log'
     java com.softcorporation.neardup.DuplicatesFinder -start docs -report duplicates.log
