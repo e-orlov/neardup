@@ -1,12 +1,4 @@
-# neardup
-echo "# neardup" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/e-orlov/neardup.git
-git push -u origin master
-
-Near-Duplicate Detection
+**Near-Duplicate Detection
 
 If you have lots of digital documents you might already know how many duplicates or near-duplicates exist on your hard drive or on your network storage devices. If you want to clean up the space - you need to find these duplicates. In this particular case we want to talk specifically about text based documents, like HTML, Microsoft Word, PDF, etc. Some documents are exact copies, (or archived exact copies), and usually these are easy to find - just calculate good checksum and compare it with others. But if you are involved in anything related to the document life cycle (like project development), then many of your archived documents will be copies made during the life cycle of this document, which basically are different versions of the same document. Usually the situation is worse, on top of that you may have different formats of documents, for example a document created in Microsoft Word and later converted to PDF format. 
 
