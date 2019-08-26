@@ -7,6 +7,7 @@ Similar problem exists for search engines, especially for global search engines 
 The problem of Near-Duplicate Detection also relates to Plagiarism Analysis and Authorship Identification. 
 
 **Near Duplicates Finder**
+
 The Near Duplicates Finder software is a Java program, which finds duplicates and near-duplicates of text documents based on internal text of a document and provides a report for future action. For example, you can automatically delete found duplicates. It takes some time to initially process the document and create a fingerprint, but finding near-duplicates among already processed documents usually takes milliseconds. 
 
 You can see that the content of the documents is different, however most of the text is matching in both documents. 
@@ -19,11 +20,13 @@ The Near Duplicates Finder runs on Java platform 1.5 (or up) and can be used on 
 By default this version is limited to process the following file extensions: ".pdf", ".htm", ".html", ".doc", ".docx", ".xls", ".txt", ".text", ".css", ".java", ".js", ".c", ".bak", ".bat", ".sh", ".xml", ".xsl", ".pl", ".properties", ".config", ".cfg", ".log". If you are not familiar with Java or you have any problems - send us an email and we will guide you on how to install the software on your computer and run it. 
 
 To run the software you need to download the zip file and unpack all files in the directory of your choice. You also need to download required 3-rd party libraries listed here. Put 3-rd party libraries in the same folder, where you put the files from neardup.zip and add all jar files to the classpath. JVM 1.7 is recommended to be installed on this computer. On Microsoft Windows you can use the run.bat file included in the zip file. Enter following command: run DIR_WITH_DOCS, where DIR_WITH_DOCS is a directory with your documents, for which you want to check if there are any duplicates or near-duplicates. If you click on run.bat without parameters, it should produce the following output: 
+
 `java com.softcorporation.neardup.DuplicatesFinder`
 
 `Invalid input parameters: Invalid number of arguments`
 
 **Near Duplicates Finder v.1.0.2**
+
 Usage: `java com.softcorporation.neardup.DuplicatesFinder parameters ...`
 
         Parameters format: -parameter [value]
@@ -41,7 +44,9 @@ Usage: `java com.softcorporation.neardup.DuplicatesFinder parameters ...`
             -verbose                    display progress information
             -help                       display this message and terminate the program
 
-Example: Find duplicates from text files in directory 'docs' and save report in 'duplicates.log'
+
+**Example**: Find duplicates from text files in directory 'docs' and save report in 'duplicates.log'
+
     `java com.softcorporation.neardup.DuplicatesFinder -start docs -report duplicates.log`
 
 Check the classpath if you cannot get a similar output (see example of the classpath setting in the run.bat file). The classpath should have all jar files listed above. You also need to make sure the software has rights to write to local directory, where it will save the report and (more importantly) the database in directory ./db. The database is created automatically and with every next run the software uses the existing database and compares new documents with the documents processed in previous run and stored in the database. You can simply delete whole directory ./db to start the comparison process all over again. 
@@ -66,4 +71,4 @@ This command will process the folder with your files (specified by -start parame
 
 **Note**: The Near Duplicates Finder by default is configured to work with relatively large documents and may not work very well with small documents (size less then 1Kb). This limitation can be removed by changing the configuration settings. 
 
-This is the mirror of softcorporation.com, dedicated to neardup.
+This is the mirror of softcorporation.com, dedicated to neardup. The original site seems to be no longer available.
