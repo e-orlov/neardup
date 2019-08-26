@@ -1,0 +1,21 @@
+Near Duplicates Finder Software.
+Copyright and License Information.
+
+The Software owned and licensed exclusively by SoftCorporation LLC.
+Copyright (C) 2011 SoftCorporation LLC. All rights reserved.
+
+SoftCorporation LLC. grants to you ("Licensee") a non-exclusive,
+non-transferable license to use the binary code without fees.
+You may not modify, decompile, or reverse engineer the Software.
+Licensee cannot distribute the software to third parties.
+Ownership of the Software shall remain solely to the SoftCorporation LLC.
+
+You are solely responsible for determining the appropriateness of using 
+this software and assume any risks associated with the usage of this software.
+
+SOFTCORPORATION LLC. SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY
+LICENSEE AS A RESULT OF USING THE SOFTWARE.
+
+By downloading, using or copying this Software, Licensee agrees
+to abide by the intellectual property laws, and all other applicable
+laws of the U.S., and the terms of this License.

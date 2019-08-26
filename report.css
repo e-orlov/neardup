@@ -1,0 +1,80 @@
+body {
+background:white;
+font-family:Verdana,Arial,Helvetica,Sans-Serif;
+font-size:12px;
+padding:10px;
+}
+
+ul.tree, 
+ul.tree ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ul.tree ul {
+  margin-left:8px;
+  position:relative;
+}
+
+ul.tree ul:before {
+  content:"";
+  display:block;
+  width:0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  border-left:1px solid;
+}
+
+ul.tree li {
+  margin:0;
+  padding:0 10px;
+  font-size:12px;
+  line-height:18px;
+  color:#369;
+  font-weight:bold;
+  position:relative;
+}
+
+ul.tree ul li:before {
+  content:"";
+  display:block;
+  width:12px;
+  height:0;
+  border-top:1px solid;
+  position:absolute;
+  top:8px;
+  left:0;
+}
+
+ul.tree ul li:last-child:before {
+  background:white;
+  height:auto;
+  bottom:0;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+}
+
+li.treehide ul { display: none; }
+li.treeshow ul { display: block; }
+
+div.pic {
+  background:url(document.png) 0 0 no-repeat;
+  padding-left: 17px;
+  text-decoration:none;
+  display:block;
+  float:left;
+  white-space:nowrap;
+}
+
+div.ref {
+#  border:1px solid;
+  text-decoration:none;
+  display:block;
+  white-space:nowrap;
+}
